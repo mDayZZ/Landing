@@ -1,0 +1,231 @@
+@keyframes scrollDown {
+    0% {
+      top: 10px;
+      opacity: 0;
+    }
+    50% {
+      top: 75%;
+      opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+
+.header {
+
+    &__top {
+    }
+
+    &__top-inner {
+        padding: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        
+        background-image: url("/img/header-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        padding-bottom: 62px;
+    }
+
+    &__content-inner {
+        padding-top: 213px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 18px;
+    }
+
+    &__description {
+        color: #FCBB08;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.743px;
+
+        margin-bottom: 180px;
+    }
+
+    &__mouse-decoration {
+        align-self: center;
+        border: 2px solid white;
+        border-radius: 15px;
+        width: 26px;
+        height: 43px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background-color: white;
+            border-radius: 50%; // Создает круглую точку
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%); // Центрирование точки внутри .mouse-decoration
+            animation: scrollDown 4s  infinite;
+          }
+
+        
+    }
+}
+.container {
+    max-width: 1170px;
+}
+.logo {
+
+    &__link {
+    }
+
+    &__img {
+    }
+}
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        font-family: raleway;
+        font-size: 12pt;
+    }
+
+    &__item {
+        padding: 0 25px;
+    }
+
+    &__link {
+        color: black
+    }
+
+    &__link--active {
+    }
+}
+.about {
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__text {
+    }
+}
+.title {
+}
+.expertise {
+
+    &__content {
+    }
+
+    &__infographic-item {
+    }
+
+    &__text {
+    }
+
+    &__cards {
+    }
+
+    &__card {
+    }
+
+    &__card-image {
+    }
+
+    &__card-info {
+    }
+
+    &__card-title {
+    }
+
+    &__card-description {
+    }
+}
+.experise {
+
+    &__infographic {
+    }
+}
+.features {
+
+    &__inner {
+    }
+
+    &__image {
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__description {
+    }
+}
+.portfolio {
+
+    &__header {
+    }
+
+    &__list {
+    }
+
+    &__btn {
+    }
+
+    &__items {
+    }
+
+    &__item-img {
+    }
+
+    &__item-title {
+    }
+
+    &__item-desc {
+    }
+
+    &__btn-more {
+    }
+}
+.presentation {
+
+    &__quotes {
+    }
+
+    &__quotes-author {
+    }
+
+    &__video {
+    }
+}
